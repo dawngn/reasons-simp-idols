@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+nav{
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1010;
+  background: rgb(21 19 19 / 80%);
+  height: 92px;
+  min-width: 1280px;
+}
+
+.section :hover{
+  text-shadow: 0 0 29px #edb1e5, 0 0 29px #e3a7e1, 0 0 29px #ef97e7, 0 0 29px #d385d3, 0 0 29px #c658d7;
+  transition: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  list-style-type: none;
+}
+
+li {
+  display: list-item;
+  margin: 0 10px;
+  float: left;
+}
+
+.navbar :after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ a {
+  font-size: 28px;
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  display: block;
+  padding: 10px;
+  transition: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+    text-decoration: none;
+}

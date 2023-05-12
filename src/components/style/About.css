@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  letter-spacing: 0 !important;
+  --main-color: #8f81fc;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Righteous", cursive;
+  margin-bottom: 50px !important;
+  font-size: 32px !important;
+  line-height: 24px;
+  color: var(--main-color);
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.sus {
+  height: 400px;
+  width: 400px;
+  text-align: right;
+}
+
+.about-container {
+  padding: 50px 0 50px;
+  border-bottom: 1px solid #707070;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100%;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-img {
+  text-align: left;
+
+}
+
+.about-smt {
+  flex-basis: 700px;
+  max-width: 700px;
+  min-width: 700px;
+}
+
+p {
+  display: block;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Noto Sans JP", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  
+}
+
+.about-vtuber {
+  margin-left: auto;
+  margin-right: auto;
+  flex-basis: 700px;
+  max-width: 700px;
+  min-width: 700px;
+  margin-top: 100px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 540;
+  line-height: 140%;
+  text-align: center;
+}
+
+.vtuber-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.champion{
+  margin-left: auto;
+  margin-right: auto;
+  flex-basis: 700px;
+  max-width: 700px;
+  min-width: 700px;
+  margin-top: 50px;
+}
+
+.about{
+  opacity: 0;
+}
+
+.aboutAnimate{
+  opacity: 1;
+  transition: all 1.5s;
+}
+ 
+@media(prefers-reduced-motion){
+  .aboutAnimate{
+    transition: unset;
+  }
+}

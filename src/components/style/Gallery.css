@@ -1,0 +1,76 @@
+
+.galleryAnimate{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+} 
+
+.gallery {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  min-width: 1280px;
+  opacity: 1;
+  transition: all 1s;
+  filter: blur(0px);
+  transform: translateX(0%);
+}
+
+@media(prefers-reduced-motion){
+  .gallery{
+    transition: none;
+  }
+}
+
+.galleryH1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8f81fc;
+  
+  margin-top: 60px;
+}
+
+.characters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  width: 1000px;
+  margin: 0 0 0 -500px;
+  
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  float: left;
+}
+
+img.newC{
+    width: 171px;
+    height: 176px;
+    border: 1px solid #8f81fc;
+    transition: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 0 0 rgba(255, 107, 55, 0);
+    border-radius: 20px;
+}
+
+.gallery::after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 500px;
+}
+
+img.newC:hover{
+    border: 1px solid #fff;
+    box-shadow: 0 0 40px rgb(174, 92, 164);
+    transform: scale(1.1);
+    transition: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+  
+
+

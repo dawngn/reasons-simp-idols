@@ -1,0 +1,44 @@
+footer {
+  display: block;
+  text-align: center;
+  background-color: #7266cf;
+  height: 150px;
+}
+
+h3 {
+  color: white;
+  font-family: "Righteous", cursive;
+  padding-top: 30px;
+  font-size: 50px;
+}
+.outwrap {
+  display: flex;
+  align-items: center;
+  height: 20vw;
+}
+.slide-show {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.wrap {
+  animation: loopslide 20s infinite linear;
+  display: flex;
+}
+
+.img-slide {
+  width: 250px;
+  height: 100px;
+  margin: 0 3vw 3vw;
+}
+
+
+@keyframes loopslide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
